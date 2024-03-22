@@ -1,0 +1,66 @@
+header{
+  border-top: 5px solid $primary-color;
+  background-color: white;
+  opacity: 80%;
+  position: fixed;
+  width: 100%;
+  .container {
+    width: 78%;
+    height: 100px;
+    @extend %get-center;
+    justify-content: space-between;
+    ul {
+      @extend %get-center;
+      gap: 50px;
+      margin: 0  ;
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 15px;
+      cursor: pointer;
+      a {
+        @extend %get-center ;
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .icon {
+      @extend %get-center;
+      gap: 40px;
+      .social-media {
+        a{
+            color: black ;
+        }
+        @extend %get-center;
+        gap: 20px;
+        font-size: 13px;
+      }
+      .fa-bars {
+        font-size: 25px;
+        color: rgb(63, 63, 63);
+      }
+    }
+  }
+}
+header{
+    li{
+        transition: 0.3s;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    i{
+        transition: 0.3s;
+        &:hover{
+            color: $primary-color;
+        } 
+    }
+   .icon{
+    .fa-bars{
+        transition: 0.3s;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+   }
+    
+}
