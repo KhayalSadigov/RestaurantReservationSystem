@@ -1,0 +1,150 @@
+main {
+  .first-section {
+    height: 697px;
+    overflow: hidden;
+    @extend %get-center;
+    img {
+      object-fit: cover;
+      height: 750px;
+      width: 900px;
+      align-items: end;
+    }
+    .btn-page{
+        margin-bottom: 30px;
+    }
+    .btn-slider {
+      transition: 0.3s;
+      &:hover {
+        border-radius: 100%;
+        background-color: rgba(0, 0, 0, 0.342);
+      }
+    }
+    p {
+      z-index: 200;
+      position: absolute;
+      font-weight: 700;
+      text-align: center;
+      font-size: 40px;
+      font-family: Hack, sans-serif;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, #00000080, #fff, #000);
+      letter-spacing: 5px;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 80%;
+      animation: shine 7s linear infinite;
+      font-size: 60px;
+    }
+  }
+}
+.second-section {
+  @extend %get-center;
+  margin: 0;
+  padding: 90px 0;
+  background-color: $secondary-color;
+  .text {
+    text-align: center;
+    padding: 0 100px;
+    h1:nth-of-type(1){
+        font-family: "P";
+        color: $primary-color;
+        font-size: 30px;
+        font-family: "IM Fell English SC" ;
+    }
+    h1:nth-of-type(2){
+        font-size: 60px;
+        color: #000;
+        font-weight: bolder;
+        margin-bottom: 40px;
+    }
+    a{
+        text-decoration: none;
+        color: grey;
+    }
+    p{
+        color: grey;
+    }
+  }
+  .img {
+    height: 400px;
+    @extend %get-center;
+    div {
+      height: 400px;
+      overflow: hidden;
+      border-radius: 20px;
+      img {
+        height: 400px;
+        object-fit: cover;
+        transition: .4s;
+        &:hover{
+            transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+.third-section{
+    height: 500px;
+    overflow: hidden;
+    div{
+       text-align: center;
+        height: 400px;
+        background-attachment: fixed;
+        background-image: url(/assets/image/bg-intro-01.jpg.webp);
+        @extend %get-center ;
+        flex-direction: column;
+        h1:nth-of-type(1){
+            color: $primary-color;
+            font-family: "IM Fell English SC" ;
+            font-size: 30px;
+        }
+        h1:nth-of-type(2){
+            color: white;
+            font-family: "IM Fell English SC";
+            font-size: 60px;
+        }
+    }
+}
+.fourth-section{
+    .row{
+        padding: 0 0 60px 0;
+    }
+    .card{
+        overflow: hidden;
+        box-shadow: none;
+        border: none;
+        .img{
+            height: 230px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        img{
+            transition: .3s;
+            &:hover{
+                transform: scale(1.1) ;
+            }
+            
+        }
+        .card-body{
+            padding: 0;
+            .card-title{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        p{
+            color: grey;
+        }
+       .btn{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        text-decoration: none;
+        color: grey;
+        padding: 0;
+       }
+    }
+}

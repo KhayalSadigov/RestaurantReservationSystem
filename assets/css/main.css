@@ -1,4 +1,4 @@
-header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container {
+.third-section div, .second-section .img, .second-section, main .first-section, header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container, .row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +8,10 @@ header .container .icon .social-media, header .container .icon, header .containe
    v2.0 | 20110126
    License: none (public domain)
 */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,6 +57,18 @@ q:before, q:after {
   content: none;
 }
 
+body {
+  font-family: "Poppins";
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
 .container {
   width: 78%;
   margin: 0 auto;
@@ -60,10 +76,10 @@ q:before, q:after {
 
 header {
   border-top: 5px solid #EC1D25;
-  background-color: white;
-  opacity: 80%;
+  background-color: rgba(255, 255, 255, 0.886);
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 header .container {
   width: 78%;
@@ -114,4 +130,149 @@ header .icon .fa-bars {
 }
 header .icon .fa-bars:hover {
   color: #EC1D25;
+}
+
+main .first-section {
+  height: 697px;
+  overflow: hidden;
+}
+main .first-section img {
+  object-fit: cover;
+  height: 750px;
+  width: 900px;
+  align-items: end;
+}
+main .first-section .btn-page {
+  margin-bottom: 30px;
+}
+main .first-section .btn-slider {
+  transition: 0.3s;
+}
+main .first-section .btn-slider:hover {
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+}
+main .first-section p {
+  z-index: 200;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: Hack, sans-serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5019607843), #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 7s linear infinite;
+  font-size: 60px;
+}
+
+.second-section {
+  margin: 0;
+  padding: 90px 0;
+  background-color: #EFEFEF;
+}
+.second-section .text {
+  text-align: center;
+  padding: 0 100px;
+}
+.second-section .text h1:nth-of-type(1) {
+  font-family: "P";
+  color: #EC1D25;
+  font-size: 30px;
+  font-family: "IM Fell English SC";
+}
+.second-section .text h1:nth-of-type(2) {
+  font-size: 60px;
+  color: #000;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+.second-section .text a {
+  text-decoration: none;
+  color: grey;
+}
+.second-section .text p {
+  color: grey;
+}
+.second-section .img {
+  height: 400px;
+}
+.second-section .img div {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.second-section .img div img {
+  height: 400px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.second-section .img div img:hover {
+  transform: scale(1.1);
+}
+
+.third-section {
+  height: 500px;
+  overflow: hidden;
+}
+.third-section div {
+  text-align: center;
+  height: 400px;
+  background-attachment: fixed;
+  background-image: url(/assets/image/bg-intro-01.jpg.webp);
+  flex-direction: column;
+}
+.third-section div h1:nth-of-type(1) {
+  color: #EC1D25;
+  font-family: "IM Fell English SC";
+  font-size: 30px;
+}
+.third-section div h1:nth-of-type(2) {
+  color: white;
+  font-family: "IM Fell English SC";
+  font-size: 60px;
+}
+
+.fourth-section .row {
+  padding: 0 0 60px 0;
+}
+.fourth-section .card {
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+}
+.fourth-section .card .img {
+  height: 230px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.fourth-section .card img {
+  transition: 0.3s;
+}
+.fourth-section .card img:hover {
+  transform: scale(1.1);
+}
+.fourth-section .card .card-body {
+  padding: 0;
+}
+.fourth-section .card .card-body .card-title {
+  text-decoration: none;
+  color: #000;
+}
+.fourth-section .card p {
+  color: grey;
+}
+.fourth-section .card .btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+  color: grey;
+  padding: 0;
 }
