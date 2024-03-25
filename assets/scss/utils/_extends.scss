@@ -3,3 +3,17 @@
     justify-content: center;
     align-items: center;
 }
+%title{
+    h1:nth-of-type(1){
+        color: $primary-color;
+        font-family: "IM Fell English SC" ;
+        font-size: 30px;
+    }
+    h1:nth-of-type(2){
+        color: white;
+        font-family: "Poppins" !important; 
+        font-weight: bold;
+        font-size: 60px;
+    }
+    text-align: center;
+}

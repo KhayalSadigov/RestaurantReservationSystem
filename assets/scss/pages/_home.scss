@@ -1,4 +1,7 @@
 main {
+  .container {
+    width: 78%;
+  }
   .first-section {
     height: 697px;
     overflow: hidden;
@@ -9,17 +12,17 @@ main {
       width: 900px;
       align-items: end;
     }
-    .btn-page{
-        margin-bottom: 30px;
+    .btn-page {
+      margin-bottom: 30px;
     }
     .btn-slider {
       transition: 0.3s;
       &:hover {
         border-radius: 100%;
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: $primary-color;
       }
     }
-    p {
+    .anima-text {
       z-index: 200;
       position: absolute;
       font-weight: 700;
@@ -41,30 +44,31 @@ main {
 }
 .second-section {
   @extend %get-center;
-  margin: 0;
-  padding: 90px 0;
-  background-color: $secondary-color;
+  padding: 40px 0;
+  background-image: url(/assets/image/welcome-bg.jpg);
+  background-size: cover;
+  background-repeat: repeat;
   .text {
     text-align: center;
-    padding: 0 100px;
-    h1:nth-of-type(1){
-        font-family: "P";
-        color: $primary-color;
-        font-size: 30px;
-        font-family: "IM Fell English SC" ;
+
+    h1:nth-of-type(1) {
+      font-family: "P";
+      color: $primary-color;
+      font-size: 30px;
+      font-family: "IM Fell English SC";
     }
-    h1:nth-of-type(2){
-        font-size: 60px;
-        color: #000;
-        font-weight: bolder;
-        margin-bottom: 40px;
+    h1:nth-of-type(2) {
+      font-size: 60px;
+      color: #000;
+      font-weight: bolder;
+      margin-bottom: 40px;
     }
-    a{
-        text-decoration: none;
-        color: grey;
+    a {
+      text-decoration: none;
+      color: grey;
     }
-    p{
-        color: grey;
+    p {
+      color: grey;
     }
   }
   .img {
@@ -77,74 +81,346 @@ main {
       img {
         height: 400px;
         object-fit: cover;
-        transition: .4s;
-        &:hover{
-            transform: scale(1.1);
+        transition: 0.4s;
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }
   }
 }
-.third-section{
+.third-section {
+  height: 500px;
+  overflow: hidden;
+  div {
+    background-size: cover;
+    text-align: center;
+    height: 400px;
+    background-attachment: fixed;
+    background-image: url(/assets/image/bg-intro-01.jpg.webp);
+    @extend %get-center;
+    flex-direction: column;
+    @extend %title;
+  }
+}
+.fourth-section {
+  .row {
+    padding: 0 0 60px 0;
+  }
+  .card {
+    overflow: hidden;
+    box-shadow: none;
+    border: none;
+    .img {
+      height: 230px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+    img {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    .card-body {
+      padding: 0;
+      .card-title {
+        text-decoration: none;
+        color: #000;
+        transition: 0.3s;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    p {
+      color: grey;
+    }
+    .btn {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      text-decoration: none;
+      color: grey;
+      padding: 0;
+    }
+  }
+}
+.fifth-section {
+  background-image: url(/assets/image/our-menu-bg.jpg);
+  @extend %title;
+  h1:nth-of-type(2) {
+    color: #000;
+  }
+  .container {
+    padding: 50px 0;
+  }
+  .left,
+  .right,
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+    display: flex;
+    img {
+      width: 100%;
+      object-fit: cover;
+      transition: 0.4s;
+    }
+  }
+  .img-menu {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    @extend %get-center;
+    button {
+      position: absolute;
+      padding: 10px 40px 14px 40px;
+      font-size: 30px;
+      border: none;
+      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.886);
+      color: grey;
+      transition: 0.3s;
+      &:hover {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+  }
+  .top {
+    .left {
+      .img-menu {
+        height: 540px;
+      }
+    }
+  }
+  img {
+    height: 100%;
+  }
+  .card-menu {
+    box-sizing: border-box;
+    padding: 20px;
+    overflow: hidden;
+  }
+}
+.sixth-section {
+  .container {
+    width: 78%;
+  }
+  padding: 100px;
+  @extend %get-center;
+  @extend %title;
+  position: relative;
+  background-image: url(/assets/image/bg-event-01.jpg.webp);
+  img {
+    height: 100%;
+    @media screen and (max-width: 992px) {
+      transform: scale(1.2);
+    }
+  }
+  .carousell {
+    width: 100%;
+    position: absolute;
+  }
+  .cour-content {
+    position: absolute;
+  }
+  .title {
+    width: 100%;
+  }
+  .card-c {
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+    .img {
+      overflow: hidden;
+      object-fit: cover;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 500px;
+      }
+    }
+    .timer {
+      @extend %get-center;
+      flex-direction: column;
+      padding: 40px 50px;
+      background-color: #fff;
+      h1 {
+        font-family: "Poppins";
+      }
+      .time {
+        display: flex;
+        flex-wrap: wrap;
+        .block-time {
+          @extend %get-center;
+          flex-wrap: wrap;
+        }
+        .collon-time {
+          padding: 15px;
+          @media screen and (max-width: 992px) {
+            padding: 0px;
+          }
+          p {
+            color: grey;
+          }
+        }
+        h1 {
+          font-weight: bolder;
+          font-size: 50px;
+          color: red;
+          font-family: "Poppins";
+          @media screen and (max-width: 992px) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .sixth-section {
+    .card-c {
+      img {
+        display: none;
+      }
+    }
+    .title {
+      h1:nth-of-type(1) {
+        font-size: 20px;
+      }
+      h1:nth-of-type(2) {
+        font-size: 40px;
+      }
+    }
+    .card-c h1 {
+      font-size: 20px;
+    }
+  }
+}
+.seventh-section{
+  background-image: url(/assets/image/welcome-bg.jpg);
+  background-size: cover;
+  .container{
+    padding: 50px 0;
+    width: 78%;
+    
+  }
+  .row{
+  }
+  .card-img{
+    border-radius: 20px;
+    width: 400px;
     height: 500px;
     overflow: hidden;
-    div{
-       text-align: center;
-        height: 400px;
-        background-attachment: fixed;
-        background-image: url(/assets/image/bg-intro-01.jpg.webp);
-        @extend %get-center ;
-        flex-direction: column;
-        h1:nth-of-type(1){
-            color: $primary-color;
-            font-family: "IM Fell English SC" ;
-            font-size: 30px;
-        }
-        h1:nth-of-type(2){
-            color: white;
-            font-family: "IM Fell English SC";
-            font-size: 60px;
-        }
+    @extend %get-center ;
+    img{
+      height: 500px;
+      transition: .3s;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
-}
-.fourth-section{
-    .row{
-        padding: 0 0 60px 0;
+  }
+  .form{
+    @extend %title ;
+    h1:nth-of-type(2) 
+    {
+      color: black;
     }
-    .card{
-        overflow: hidden;
-        box-shadow: none;
+    .left , .right{
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      padding: 0 20px;
+      margin: 30px 0 ;
+    }
+    .form-input{
+      @extend %get-center ;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 40px 0;
+    }
+    input , select {
+      height: 50px;
+      width: 100%;
+      border: 1px solid rgb(192, 192, 192);
+      border-radius: 10px;
+      color: grey;
+      box-sizing: border-box;
+      padding: 0 10px;
+      
+    }
+    input:focus{
+      outline: none ;
+      transition: 0.3s ;
+      &:hover{
+        border: 1px solid $primary-color ;
+      }
+    }
+    .button{
+      @extend %get-center ;
+      padding: 30px 0;
+      button{
+        height: 50px;
+        width: 150px;
         border: none;
-        .img{
-            height: 230px;
-            border-radius: 20px;
-            margin-bottom: 15px;
-            overflow: hidden;
-        }
-        img{
-            transition: .3s;
-            &:hover{
-                transform: scale(1.1) ;
-            }
-            
-        }
-        .card-body{
-            padding: 0;
-            .card-title{
-                text-decoration: none;
-                color: #000;
-            }
-        }
-        p{
-            color: grey;
-        }
-       .btn{
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        text-decoration: none;
-        color: grey;
-        padding: 0;
-       }
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+      }
     }
+  }
+}
+.eighth-section{
+  @extend %title ;
+  padding: 50px 0;
+  h1:nth-of-type(2)
+  {
+    color: #000;
+  }
+  
+  .container{
+@extend %get-center ;
+  flex-direction: column;
+  gap: 20px;
+  }
+  .profile{
+    margin-top: 50px;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 3px solid $primary-color;
+    
+    img{
+      width: 170px;
+      object-fit: cover;
+    }
+  }
+  .text{
+    width: 65%;
+    color: grey;
+  }
+  .fa-star{
+    color: $primary-color;
+  }
+  .name{
+    color: grey;
+  }
 }

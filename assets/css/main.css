@@ -1,7 +1,22 @@
-.third-section div, .second-section .img, .second-section, main .first-section, header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container, .row {
+.eighth-section .container, .seventh-section .form .button, .seventh-section .form .form-input, .seventh-section .card-img, .sixth-section .card-c .timer .time .block-time, .sixth-section .card-c .timer, .sixth-section, .fifth-section .img-menu, .third-section div, .second-section .img, .second-section, main .first-section, header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container, .row {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.eighth-section, .seventh-section .form, .sixth-section, .fifth-section, .third-section div {
+  text-align: center;
+}
+.eighth-section h1:nth-of-type(1), .seventh-section .form h1:nth-of-type(1), .sixth-section h1:nth-of-type(1), .fifth-section h1:nth-of-type(1), .third-section div h1:nth-of-type(1) {
+  color: #EC1D25;
+  font-family: "IM Fell English SC";
+  font-size: 30px;
+}
+.eighth-section h1:nth-of-type(2), .seventh-section .form h1:nth-of-type(2), .sixth-section h1:nth-of-type(2), .fifth-section h1:nth-of-type(2), .third-section div h1:nth-of-type(2) {
+  color: white;
+  font-family: "Poppins" !important;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -74,11 +89,15 @@ body {
   margin: 0 auto;
 }
 
+.row {
+  flex-wrap: wrap;
+}
+
 header {
   border-top: 5px solid #EC1D25;
   background-color: rgba(255, 255, 255, 0.886);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 999;
 }
 header .container {
@@ -132,6 +151,9 @@ header .icon .fa-bars:hover {
   color: #EC1D25;
 }
 
+main .container {
+  width: 78%;
+}
 main .first-section {
   height: 697px;
   overflow: hidden;
@@ -150,9 +172,9 @@ main .first-section .btn-slider {
 }
 main .first-section .btn-slider:hover {
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: #EC1D25;
 }
-main .first-section p {
+main .first-section .anima-text {
   z-index: 200;
   position: absolute;
   font-weight: 700;
@@ -172,13 +194,13 @@ main .first-section p {
 }
 
 .second-section {
-  margin: 0;
-  padding: 90px 0;
-  background-color: #EFEFEF;
+  padding: 40px 0;
+  background-image: url(/assets/image/welcome-bg.jpg);
+  background-size: cover;
+  background-repeat: repeat;
 }
 .second-section .text {
   text-align: center;
-  padding: 0 100px;
 }
 .second-section .text h1:nth-of-type(1) {
   font-family: "P";
@@ -221,21 +243,12 @@ main .first-section p {
   overflow: hidden;
 }
 .third-section div {
+  background-size: cover;
   text-align: center;
   height: 400px;
   background-attachment: fixed;
   background-image: url(/assets/image/bg-intro-01.jpg.webp);
   flex-direction: column;
-}
-.third-section div h1:nth-of-type(1) {
-  color: #EC1D25;
-  font-family: "IM Fell English SC";
-  font-size: 30px;
-}
-.third-section div h1:nth-of-type(2) {
-  color: white;
-  font-family: "IM Fell English SC";
-  font-size: 60px;
 }
 
 .fourth-section .row {
@@ -264,6 +277,10 @@ main .first-section p {
 .fourth-section .card .card-body .card-title {
   text-decoration: none;
   color: #000;
+  transition: 0.3s;
+}
+.fourth-section .card .card-body .card-title:hover {
+  color: #EC1D25;
 }
 .fourth-section .card p {
   color: grey;
@@ -275,4 +292,260 @@ main .first-section p {
   text-decoration: none;
   color: grey;
   padding: 0;
+}
+
+.fifth-section {
+  background-image: url(/assets/image/our-menu-bg.jpg);
+}
+.fifth-section h1:nth-of-type(2) {
+  color: #000;
+}
+.fifth-section .container {
+  padding: 50px 0;
+}
+.fifth-section .left,
+.fifth-section .right,
+.fifth-section .top,
+.fifth-section .bottom {
+  flex-wrap: wrap;
+  display: flex;
+}
+.fifth-section .left img,
+.fifth-section .right img,
+.fifth-section .top img,
+.fifth-section .bottom img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+.fifth-section .img-menu {
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+.fifth-section .img-menu:hover img {
+  transform: scale(1.1);
+}
+.fifth-section .img-menu button {
+  position: absolute;
+  padding: 10px 40px 14px 40px;
+  font-size: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.886);
+  color: grey;
+  transition: 0.3s;
+}
+.fifth-section .img-menu button:hover {
+  background-color: #EC1D25;
+  color: white;
+}
+.fifth-section .top .left .img-menu {
+  height: 540px;
+}
+.fifth-section img {
+  height: 100%;
+}
+.fifth-section .card-menu {
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.sixth-section {
+  padding: 100px;
+  position: relative;
+  background-image: url(/assets/image/bg-event-01.jpg.webp);
+}
+.sixth-section .container {
+  width: 78%;
+}
+.sixth-section img {
+  height: 100%;
+}
+@media screen and (max-width: 992px) {
+  .sixth-section img {
+    transform: scale(1.2);
+  }
+}
+.sixth-section .carousell {
+  width: 100%;
+  position: absolute;
+}
+.sixth-section .cour-content {
+  position: absolute;
+}
+.sixth-section .title {
+  width: 100%;
+}
+.sixth-section .card-c {
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+}
+.sixth-section .card-c a {
+  text-decoration: none;
+  color: grey;
+}
+.sixth-section .card-c .img {
+  overflow: hidden;
+  object-fit: cover;
+}
+.sixth-section .card-c .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+.sixth-section .card-c .timer {
+  flex-direction: column;
+  padding: 40px 50px;
+  background-color: #fff;
+}
+.sixth-section .card-c .timer h1 {
+  font-family: "Poppins";
+}
+.sixth-section .card-c .timer .time {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sixth-section .card-c .timer .time .block-time {
+  flex-wrap: wrap;
+}
+.sixth-section .card-c .timer .time .collon-time {
+  padding: 15px;
+}
+@media screen and (max-width: 992px) {
+  .sixth-section .card-c .timer .time .collon-time {
+    padding: 0px;
+  }
+}
+.sixth-section .card-c .timer .time .collon-time p {
+  color: grey;
+}
+.sixth-section .card-c .timer .time h1 {
+  font-weight: bolder;
+  font-size: 50px;
+  color: red;
+  font-family: "Poppins";
+}
+@media screen and (max-width: 992px) {
+  .sixth-section .card-c .timer .time h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sixth-section .card-c img {
+    display: none;
+  }
+  .sixth-section .title h1:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .sixth-section .title h1:nth-of-type(2) {
+    font-size: 40px;
+  }
+  .sixth-section .card-c h1 {
+    font-size: 20px;
+  }
+}
+.seventh-section {
+  background-image: url(/assets/image/welcome-bg.jpg);
+  background-size: cover;
+}
+.seventh-section .container {
+  padding: 50px 0;
+  width: 78%;
+}
+.seventh-section .card-img {
+  border-radius: 20px;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+}
+.seventh-section .card-img img {
+  height: 500px;
+  transition: 0.3s;
+}
+.seventh-section .card-img img:hover {
+  transform: scale(1.1);
+}
+.seventh-section .form h1:nth-of-type(2) {
+  color: black;
+}
+.seventh-section .form .left, .seventh-section .form .right {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+.seventh-section .form .form-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px 0;
+}
+.seventh-section .form input, .seventh-section .form select {
+  height: 50px;
+  width: 100%;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  color: grey;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.seventh-section .form input:focus {
+  outline: none;
+  transition: 0.3s;
+}
+.seventh-section .form input:focus:hover {
+  border: 1px solid #EC1D25;
+}
+.seventh-section .form .button {
+  padding: 30px 0;
+}
+.seventh-section .form .button button {
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.eighth-section {
+  padding: 50px 0;
+}
+.eighth-section h1:nth-of-type(2) {
+  color: #000;
+}
+.eighth-section .container {
+  flex-direction: column;
+  gap: 20px;
+}
+.eighth-section .profile {
+  margin-top: 50px;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  overflow: hidden;
+  border: 3px solid #EC1D25;
+}
+.eighth-section .profile img {
+  width: 170px;
+  object-fit: cover;
+}
+.eighth-section .text {
+  width: 65%;
+  color: grey;
+}
+.eighth-section .fa-star {
+  color: #EC1D25;
+}
+.eighth-section .name {
+  color: grey;
 }
