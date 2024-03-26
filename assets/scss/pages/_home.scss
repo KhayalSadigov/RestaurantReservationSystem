@@ -112,12 +112,14 @@ main {
     box-shadow: none;
     border: none;
     .img {
-      height: 230px;
+      height: 220px;
       border-radius: 20px;
       margin-bottom: 15px;
       overflow: hidden;
     }
     img {
+
+      
       transition: 0.3s;
       &:hover {
         transform: scale(1.1);
@@ -422,5 +424,61 @@ main {
   }
   .name{
     color: grey;
+  }
+}
+.ninth-section{
+  background-image: url(/assets/image/bg-cover-video-02.jpg.webp);
+  
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  .content{
+    @extend %get-center ;
+    flex-direction: column ;
+    @extend %title ;
+    height: 100%;
+    background-color: #00000063;
+    .text{
+      padding: 20px;
+    }
+    .icon{
+      cursor: pointer;
+      margin: 40px;
+      height: 70px;
+      @extend %get-center ;
+      font-size: 20px;
+      width: 70px;
+      background-color: white;
+      a{
+        color: #000;
+      }
+      border-radius: 100%;
+    }
+  }
+}
+.tenth-section{
+  
+  .text{
+    @extend %title ;
+    padding: 40px;
+    h1:nth-of-type(2)
+  {
+    color: #000;
+  }
+  }
+  .img{
+    position: relative;
+
+    .date{
+      background-color: rgba(0, 0, 0, 0.637);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 12px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 4;
+    }
   }
 }

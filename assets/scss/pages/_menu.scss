@@ -1,0 +1,149 @@
+.m-first-section{
+    div{
+        @extend %get-center ;
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        background-image: url(/assets/image/bg-title-page-01.jpg.webp);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        width: 100%;
+    }
+}
+.m-second-section{
+    display: flex;
+    flex-wrap: wrap;
+    .left{
+        padding: 70px 20px 70px 0;
+    }
+    .right{
+        padding: 70px 0 70px 20px;
+    }
+    h6{
+        white-space: nowrap;
+           color: grey;
+           font-weight: normal;
+    }
+    .item{
+        margin-top: 40px;
+    }
+    .block{
+        margin-top: 50px;
+    }
+    .item-price{
+        margin-top: 20px;
+        h4{
+           white-space: nowrap;
+           color: grey;
+           font-weight: normal;
+           font-size: 20px;
+           cursor: pointer;
+           transition: .3s;
+           &:hover{
+            color: $primary-color;
+           }
+        }
+        .dots{
+            width: 100%;
+            @extend %get-center ;
+            padding: 0 10px;
+            div{
+                
+            width: 100%;
+            border-bottom: 3px dotted grey;
+            }
+        }
+        display: flex;
+    }
+}
+.m-third-section{
+    div{
+        @extend %get-center ;
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        background-image: url(/assets/image/header-menu-01.jpg.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+    }
+}
+.m-fourth-section{
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .left , .right{
+        
+    }
+    .m-card{
+        padding: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        .img{
+            height: 130px;
+            width: 160px;
+            overflow: hidden;
+            border-radius: 10px;
+            @extend %get-center ;
+            img{
+                height: 130px;
+                object-fit: cover;
+                transition: .3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .m-card-text{
+            padding: 10px 20px;
+            display: flex;
+            justify-content: end;
+            flex-direction: column;
+        }
+        h4{
+            font-size: 20px;
+            font-weight: normal;
+            color: grey;
+            transition: .3s;
+            cursor: pointer;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        p{
+            color: grey;
+        }
+        h2{
+            font-size: 20px;
+            color: grey;
+            font-weight: 400;
+        }
+    }
+}
+.m-fifth-section{
+    div{
+        @extend %get-center ;
+        h1{
+            color: white;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        background-image: url(/assets/image/header-menu-02.jpg.webp);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+    }
+}
