@@ -64,3 +64,11 @@ header{
    }
     
 }
+@media screen and (max-width: 1160px){
+  header{
+    ul{
+      display: none !important;
+      // visibility: hidden;
+    }
+  }
+}

@@ -1,18 +1,18 @@
-.r-second-section .container, .r-second-section, .r-first-section div, .m-fifth-section div, .m-fourth-section .m-card .img, .m-third-section div, .m-second-section .item-price .dots, .m-first-section div, .ninth-section .content .icon, .ninth-section .content, .eighth-section .container, .seventh-section .form .button, .seventh-section .form .form-input, .seventh-section .card-img, .sixth-section .card-c .timer .time .block-time, .sixth-section .card-c .timer, .sixth-section, .fifth-section .img-menu, .third-section div, .second-section .img, .second-section, main .first-section, .footer__container .footer__gallery .footer__gallery__container div, header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container {
+.b-second-section .right .item-block .img, .b-second-section .right .search a, .b-second-section .right .search, .a-sixth-section .card, .g-second-section .gallery .img img, .g-second-section .gallery .img .g-content .hover, .g-second-section .gallery .img .g-content, .g-second-section .gallery .img, .g-second-section .filter ul, .r-second-section .container, .r-second-section, .r-first-section div, .m-fifth-section div, .m-fourth-section .m-card .img, .m-third-section div, .m-second-section .item-price .dots, .m-first-section div, .ninth-section .content .icon, .ninth-section .content, .eighth-section .container, .seventh-section .form .button, .seventh-section .form .form-input, .seventh-section .card-img, .sixth-section .card-c .timer .time .block-time, .sixth-section .card-c .timer, .sixth-section, .fifth-section .img-menu, .third-section div, .second-section .img, .second-section, main .first-section, .footer__container .footer__gallery .footer__gallery__container div, header .container .icon .social-media, header .container .icon, header .container ul a, header .container ul, header .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.tenth-section .text, .ninth-section .content, .eighth-section, .seventh-section .form, .sixth-section, .fifth-section, .third-section div {
+.a-sixth-section .text, .r-second-section, .tenth-section .text, .ninth-section .content, .eighth-section, .seventh-section .form, .sixth-section, .fifth-section, .third-section div {
   text-align: center;
 }
-.tenth-section .text h1:nth-of-type(1), .ninth-section .content h1:nth-of-type(1), .eighth-section h1:nth-of-type(1), .seventh-section .form h1:nth-of-type(1), .sixth-section h1:nth-of-type(1), .fifth-section h1:nth-of-type(1), .third-section div h1:nth-of-type(1) {
+.a-sixth-section .text h1:nth-of-type(1), .r-second-section h1:nth-of-type(1), .tenth-section .text h1:nth-of-type(1), .ninth-section .content h1:nth-of-type(1), .eighth-section h1:nth-of-type(1), .seventh-section .form h1:nth-of-type(1), .sixth-section h1:nth-of-type(1), .fifth-section h1:nth-of-type(1), .third-section div h1:nth-of-type(1) {
   color: #EC1D25;
   font-family: "IM Fell English SC";
   font-size: 30px;
 }
-.tenth-section .text h1:nth-of-type(2), .ninth-section .content h1:nth-of-type(2), .eighth-section h1:nth-of-type(2), .seventh-section .form h1:nth-of-type(2), .sixth-section h1:nth-of-type(2), .fifth-section h1:nth-of-type(2), .third-section div h1:nth-of-type(2) {
+.a-sixth-section .text h1:nth-of-type(2), .r-second-section h1:nth-of-type(2), .tenth-section .text h1:nth-of-type(2), .ninth-section .content h1:nth-of-type(2), .eighth-section h1:nth-of-type(2), .seventh-section .form h1:nth-of-type(2), .sixth-section h1:nth-of-type(2), .fifth-section h1:nth-of-type(2), .third-section div h1:nth-of-type(2) {
   color: white;
   font-family: "Poppins" !important;
   font-weight: bold;
@@ -84,7 +84,7 @@ body {
     background-position-x: 500%;
   }
 }
-.container {
+.containerr {
   width: 78%;
   margin: 0 auto;
 }
@@ -151,6 +151,11 @@ header .icon .fa-bars:hover {
   color: #EC1D25;
 }
 
+@media screen and (max-width: 1160px) {
+  header ul {
+    display: none !important;
+  }
+}
 .signUp {
   background-color: #EFEFEF;
   width: 100%;
@@ -1000,4 +1005,271 @@ main .first-section .anima-text {
 }
 .r-second-section .container .text .right, .r-second-section .container .text .left {
   padding: 0 70px;
+}
+
+.g-second-section .filter {
+  padding: 80px 0;
+  width: 100%;
+}
+.g-second-section .filter ul {
+  gap: 30px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .g-second-section .filter ul {
+    flex-direction: column;
+  }
+}
+.g-second-section .filter ul li:nth-of-type(1) {
+  color: white;
+  background-color: black;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.g-second-section .filter ul li {
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.g-second-section .filter ul li:hover {
+  color: white;
+  background-color: black;
+}
+.g-second-section .gallery {
+  padding: 0 0 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.g-second-section .gallery .img {
+  padding: 10px;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.g-second-section .gallery .img .g-content {
+  transition: 0.3s;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.g-second-section .gallery .img .g-content .hover {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0);
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.g-second-section .gallery .img .g-content .hover:hover {
+  color: white;
+  background-color: rgba(255, 0, 0, 0.473);
+}
+.g-second-section .gallery .img:hover img {
+  transform: scale(1.1);
+}
+.g-second-section .gallery .img img {
+  transition: 0.3s;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.r-first-section div {
+  background-image: url(/assets/image/bg-title-page-03.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+.r-first-section div h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.r-second-section {
+  background-image: url(/assets/image/welcome-bg.jpg);
+}
+.r-second-section .container {
+  flex-direction: column;
+  padding: 80px;
+}
+.r-second-section h1:nth-of-type(2) {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.a-fourth-section .row {
+  margin: 60px 0;
+}
+.a-fourth-section .img {
+  margin: 60px 0;
+}
+.a-fourth-section .text {
+  margin: 60px 0;
+}
+.a-fourth-section .row:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.a-sixth-section {
+  margin: 40px 0;
+}
+.a-sixth-section .text {
+  padding: 80px 0;
+}
+.a-sixth-section .text h1:nth-of-type(2) {
+  color: black;
+}
+.a-sixth-section .container {
+  display: flex;
+}
+.a-sixth-section .container .item {
+  padding: 40px 20px;
+}
+.a-sixth-section .card {
+  position: relative;
+  padding: 70px 30px;
+}
+.a-sixth-section .card .card-text {
+  text-align: center;
+}
+.a-sixth-section .card .card-text .name {
+  padding-bottom: 20px;
+}
+.a-sixth-section .card .card-profile {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border: 3px solid #EC1D25;
+  background-image: url(/assets/image/avatar-05.jpg.webp);
+  background-size: cover;
+  top: -60px;
+}
+
+.b-second-section .mini-header {
+  padding-top: 15px;
+}
+.b-second-section .mini-header ul {
+  display: flex;
+  gap: 10px;
+}
+.b-second-section .mini-header ul li:nth-of-type(1) {
+  transition: 0.3s;
+}
+.b-second-section .mini-header ul li:nth-of-type(1):hover {
+  color: #EC1D25;
+}
+.b-second-section .mini-header ul a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+.b-second-section .mini-header ul a:hover {
+  color: #EC1D25;
+}
+.b-second-section .mini-header ul li:nth-of-type(3) {
+  color: grey;
+}
+.b-second-section .left, .b-second-section .right {
+  padding: 30px;
+}
+.b-second-section .left {
+  border-right: 2px solid rgba(128, 128, 128, 0.425);
+}
+.b-second-section .right .search {
+  margin-bottom: 30px;
+  height: 40px;
+}
+.b-second-section .right .search input {
+  height: 100%;
+  padding: 0 10px;
+}
+.b-second-section .right .search a {
+  color: white;
+  background-color: black;
+  height: 100%;
+  padding: 0 15px;
+}
+.b-second-section .right .text-block {
+  display: flex;
+  flex-direction: column;
+}
+.b-second-section .right .text-block h1 {
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+}
+.b-second-section .right .text-block a {
+  font-size: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.b-second-section .right .text-block ahover {
+  color: #EC1D25;
+}
+.b-second-section .right .item-block {
+  margin: 20px 0;
+}
+.b-second-section .right .item-block h1 {
+  padding: 20px 0;
+  border-bottom: 1px solid grey;
+}
+.b-second-section .right .item-block .b-card {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 0;
+}
+.b-second-section .right .item-block .b-card h5 {
+  font-size: 15px;
+}
+.b-second-section .right .item-block .img {
+  overflow: hidden;
+  height: 80px;
+  width: 100px;
+  border-radius: 10px;
+}
+.b-second-section .right .item-block .img img {
+  height: 80px;
+}
+.b-second-section .card {
+  border: none;
+}
+.b-second-section .card .img {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.b-second-section .card img {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.b-second-section .card img:hover {
+  transform: scale(1.05);
+}
+.b-second-section .container:nth-of-type(2) {
+  display: flex;
+}
+.b-second-section a {
+  text-decoration: none;
+}
+.b-second-section a h2 {
+  font-weight: normal;
+}
+.b-second-section p {
+  font-size: small;
+}
+.b-second-section .card-body a:nth-of-type(2) {
+  margin: 0;
+  text-decoration: none;
+  color: grey;
+}
+.b-second-section .card-body a:nth-of-type(2):hover {
+  color: #EC1D25;
 }

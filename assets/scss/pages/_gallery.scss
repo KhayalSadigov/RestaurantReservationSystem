@@ -1,0 +1,78 @@
+.g-second-section{
+    .filter{
+        padding: 80px 0;
+        width: 100%;
+        ul{
+            gap: 30px ;
+            @extend %get-center ;
+            font-weight: 600;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+              }
+            li:nth-of-type(1){
+                color: white;
+                background-color: black;
+                padding: 5px 15px;
+                border-radius: 20px;
+            }
+            li{
+                padding: 5px 15px;
+                border-radius: 20px;
+                transition: .3s;
+                &:hover{
+                    color: white;
+                background-color: black;
+                }
+                cursor: pointer;
+                white-space: nowrap;
+            }
+        }
+    }
+    .gallery{
+        padding: 0 0 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .img{
+            padding: 10px;
+            max-height: 300px;
+            overflow: hidden;
+            border-radius: 10px;
+            @extend %get-center ;
+            .g-content{
+                transition: .3s ;
+                position: relative;
+                height: 100% ;
+                overflow: hidden;
+                border-radius: 10px ;
+                @extend %get-center ;
+                .hover{
+                    position: absolute;
+                    background-color: rgba(255, 0, 0, 0);
+                    width: 100%;
+                    height: 100%;
+                    @extend %get-center ;
+                    font-size: 40px;
+                    color: rgba(255, 255, 255, 0);
+                    transition: .3s;
+                    cursor: pointer;
+                }
+                .hover:hover{
+                    color: white;
+                    background-color: rgba(255, 0, 0, 0.473);
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.1) ;
+                }
+            }
+            img{
+                transition: .3s ;
+                @extend %get-center ;
+                object-fit: cover;
+                max-height: 300px;
+                
+            }
+        }
+    }
+}
